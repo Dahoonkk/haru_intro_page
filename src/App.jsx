@@ -10,7 +10,7 @@ function App() {
       <Home />
       <br/>
       <br/>
-      <MadeBy />
+      {/* <MadeBy /> */}
       <Footer />
     </>
   );

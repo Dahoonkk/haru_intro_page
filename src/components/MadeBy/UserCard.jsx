@@ -7,8 +7,8 @@ const UserCard = ({ userId, idx }) => {
   // console.log(dahoon);
   return (
     <div>
-        <div>userId: {user[idx].id}</div>
-        <div>title: {user[idx].title}</div>
+        {/* <div>userId: {user[idx].id}</div>
+        <div>title: {user[idx].title}</div> */}
     </div>
   );
 };
