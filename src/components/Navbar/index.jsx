@@ -1,21 +1,22 @@
 import { useEffect, useState } from "react";
 import mainLogo from "../../assets/haru-removebg.svg";
+import styled from "styled-components";
 
-const Navbar = () => {
-  const [show, setShow] = useState(false);
+const Navbar = ({ show }) => {
+  // const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        setShow(ture);
-      } else {
-        setShow(false);
-      }
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {});
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (window.scrollY > 50) {
+  //       setShow(true);
+  //     } else {
+  //       setShow(false);
+  //     }
+  //   });
+  //   return () => {
+  //     window.removeEventListener("scroll", () => {});
+  //   };
+  // }, []);
 
   return (
     <NavWrapper show={show}>
@@ -32,5 +33,5 @@ export default Navbar;
 
 const NavWrapper = styled.nav`
   position: fixed;
-  background-color: ${(props) => (props.show ? "#090b13" : "transparent")};
+  background-color: ${(show) => (show ? "#090b13" : "transparent")};
 `;
