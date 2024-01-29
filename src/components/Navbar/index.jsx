@@ -18,13 +18,18 @@ const Navbar = ({ show }) => {
   // }, []);
 
   return (
-    <NavWrapper show={true}>
-      <nav className="w-screen h-[100px] z-1 fixed drop-shadow-lg">
-        <div className="flex items-center justify-between w-full h-full px-10">
-          <img className="mr-4 text-3xl" src={mainLogo} alt="haru-logo" />
-        </div>
-      </nav>
-    </NavWrapper>
+    <nav className="w-screen h-[80px] fixed drop-shadow-lg relative">
+      <div className="flex items-center justify-between w-full h-full px-10">
+        <img className="mr-4 text-3xl" src={mainLogo} alt="haru-logo" />
+      </div>
+    </nav>
+    // <NavWrapper show={true} className="z-1">
+    //   <nav className="w-screen h-[80px] fixed drop-shadow-lg z-3 relative">
+    //     <div className="flex items-center justify-between w-full h-full px-10">
+    //       <img className="mr-4 text-3xl" src={mainLogo} alt="haru-logo" />
+    //     </div>
+    //   </nav>
+    // </NavWrapper>
   );
 };
 
@@ -32,5 +37,6 @@ export default Navbar;
 
 const NavWrapper = styled.nav`
   position: fixed;
-  background-color: ${(show) => (show ? "#090b13" : "transparent")};
+  /* background-color: ${(show) => (show ? "#090b13" : "transparent")}; */
+  background-color: ${(show) => (show ? "#CCCCCC" : "transparent")};
 `;

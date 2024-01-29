@@ -6,7 +6,7 @@ import page_friend from "/page_friend.jpg";
 
 const AboutApp = () => {
   return (
-    <div className="bg-white mb-25">
+    <div className="bg-white mb-25 z-2">
       <div className="flex w-full bg-white">
         <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
