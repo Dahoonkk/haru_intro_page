@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import mainLogo from "../../assets/haru-removebg.svg";
 import styled from "styled-components";
 
