@@ -19,12 +19,12 @@ const MadeBy = () => {
       <div className="max-w-[1240px] mx-auto text-black relative">
         <div className="px-4 py-12">
           <h3 className="pt-8 text-3xl text-center uppercase text-zinc-200 font-bold md:text-4xl">
-            HARU를 만든 사람들
+            Person who made haru
           </h3>
         </div>
         <div className="px-4 py-10">
           <h2 className="pt-4 text-2xl text-center text-zinc-200 font-bold md:text-3xl">
-            다음은 HARU를 만든 사람들입니다.
+            HARU를 만든 사람들입니다.
             <br />총 5명의 인원이 각자 역할을 맡아 열심히 만들었습니다.
           </h2>
         </div>
