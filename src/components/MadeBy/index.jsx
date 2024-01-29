@@ -11,7 +11,7 @@ const MadeBy = () => {
     <div name="Made_Info" className="w-full my-24">
       <div className="w-full h-[700px] bg-slage-900/90 absolute">
         <img
-          className="brightness-50 opacity-75 object-cover w-full h-full"
+          className="brightness-50 object-cover w-full h-full"
           src={calendar_bg}
           alt="/"
         />
