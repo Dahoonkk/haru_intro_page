@@ -18,8 +18,8 @@ const Navbar = ({ show }) => {
   // }, []);
 
   return (
-    <NavWrapper show={show}>
-      <nav className="w-screen h-[80px] z-1 fixed drop-shadow-lg">
+    <NavWrapper show={true}>
+      <nav className="w-screen h-[100px] z-1 fixed drop-shadow-lg">
         <div className="flex items-center justify-between w-full h-full px-10">
           <img className="mr-4 text-3xl" src={mainLogo} alt="haru-logo" />
         </div>

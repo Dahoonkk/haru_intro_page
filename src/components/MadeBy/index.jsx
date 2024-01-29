@@ -1,8 +1,8 @@
-import dh from "../../../public/dahoon.jpg";
-import bh from "../../../public/yangbh.png";
-import ws from "../../../public/songusika.jpg";
-import dc from "../../../public/kdc.png";
-import dk from "../../../public/dukh.jpg";
+import dh from "/dahoon.jpg";
+import bh from "/yangbh.png";
+import ws from "/songusika.jpg";
+import dc from "/kdc.png";
+import dk from "/dukh.jpg";
 import calendar_bg from "../../../public/calendar_background.jpg";
 import PositionCard from "./PositionCard";
 
@@ -18,12 +18,12 @@ const MadeBy = () => {
       </div>
       <div className="max-w-[1240px] mx-auto text-black relative">
         <div className="px-4 py-12">
-          <h3 className="pt-8 text-3xl text-center uppercase text-zinc-200 font-bold">
+          <h3 className="pt-8 text-3xl text-center uppercase text-zinc-200 font-bold md:text-4xl">
             Who made the HARU
           </h3>
         </div>
         <div className="px-4 py-10">
-          <h2 className="pt-4 text-2xl text-center text-zinc-200 font-bold">
+          <h2 className="pt-4 text-2xl text-center text-zinc-200 font-bold md:text-3xl">
             These are the people who made HARU.
             <br />A total of 5 people worked hard to create it according to
             their respective roles.
