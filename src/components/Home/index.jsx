@@ -1,6 +1,6 @@
 import plan_bg from "/plan_bg.jpg";
 import { motion } from "framer-motion";
-import logo from "/haru_logo.jpg"
+import bg from "/haru_bg.png";
 
 const Home = () => {
   return (
@@ -15,17 +15,17 @@ const Home = () => {
       }}
     >
       <motion.div className="w-full ">
-        <img src={plan_bg} className="brightness-50 object-cover" />
+        <img src={bg} className="object-cove h-300" />
       </motion.div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <h3 className="text-3xl text-white mb-5 md:text-4xl">
+        {/* <h3 className="text-3xl text-white mb-5 md:text-4xl">
           일정을 함께 등록하고 공유해보세요
         </h3>
         <div className="text-center mt-7">
           <h3 className="text-6xl font-bold text-white md:text-7xl">
             HA<a className="text-red-600">R</a>U.
           </h3>
-        </div>
+        </div> */}
         {/* <div>
           <img src={logo} className="" />
         </div> */}
