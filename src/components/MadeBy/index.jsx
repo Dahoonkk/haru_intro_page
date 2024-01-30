@@ -5,10 +5,11 @@ import dc from "/kdc.png";
 import dk from "/dukh.jpg";
 import calendar_bg from "../../../public/calendar_background.jpg";
 import PositionCard from "./PositionCard";
+import { motion } from "framer-motion";
 
 const MadeBy = () => {
   return (
-    <div name="Made_Info" className="w-full my-24">
+    <div name="Made_Info" className="w-full my-24 ">
       <div className="w-full h-[700px] bg-slage-900/90 absolute">
         <img
           className="brightness-50 object-cover w-full h-full"

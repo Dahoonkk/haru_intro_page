@@ -3,12 +3,13 @@ import page_home from "/page_home.jpg";
 import page_cal from "/page_cal.jpg";
 import page_add from "/page_add.jpg";
 import page_friend from "/page_friend.jpg";
+import { motion } from 'framer-motion';
 
 const AboutApp = () => {
   return (
-    <div className="bg-white mb-25 z-2">
-      <div className="flex w-full bg-white">
-        <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+    <div className="bg-white mb-25 ">
+      <div className="flex w-full bg-white my-10 scale-75">
+        <motion.div className="grid md:grid-cols-2 max-w-[1240px] m-auto" whileHover={{ scale: 1.2 }}>
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
               간편한 로그인
@@ -24,11 +25,11 @@ const AboutApp = () => {
               <img src={login_page} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex w-full bg-white my-20">
-        <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+      <div className="flex w-full bg-white my-10 scale-75">
+        <motion.div className="grid md:grid-cols-2 max-w-[1240px] m-auto" whileHover={{ scale: 1.2 }}>
           <div className="flex flex-col justify-center ml-10">
             <div className="flex flex-row flex-wrap mt-6 sm:mt-10">
               <img src={page_home} className="h-427 w-252" />
@@ -44,11 +45,11 @@ const AboutApp = () => {
               달성률도 확인해보세요.
             </h3>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex w-full bg-white">
-        <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+      <div className="flex w-full bg-white my-10 scale-75" >
+        <motion.div className="grid md:grid-cols-2 max-w-[1240px] m-auto" whileHover={{ scale: 1.2 }}>
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
               날짜별 일정 확인
@@ -64,11 +65,11 @@ const AboutApp = () => {
               <img src={page_cal} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex w-full bg-white my-20">
-        <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+      <div className="flex w-full bg-white my-10 scale-75">
+        <motion.div className="grid md:grid-cols-2 max-w-[1240px] m-auto" whileHover={{ scale: 1.2 }}>
           <div className="flex flex-col justify-center ml-10">
             <div className="flex flex-row flex-wrap mt-6 sm:mt-10">
               <img src={page_add} className="h-427 w-252" />
@@ -84,11 +85,11 @@ const AboutApp = () => {
               친구들과 함께 일정도 공유 가능합니다.
             </h3>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex w-full bg-white">
-        <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+      <div className="flex w-full bg-white my-10 scale-75">
+        <motion.div className="grid md:grid-cols-2 max-w-[1240px] m-auto" whileHover={{ scale: 1.2 }}>
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
               친구들 Following
@@ -104,7 +105,7 @@ const AboutApp = () => {
               <img src={page_friend} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

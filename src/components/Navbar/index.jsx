@@ -1,42 +1,20 @@
 import mainLogo from "../../assets/haru-removebg.svg";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 const Navbar = ({ show }) => {
-  // const [show, setShow] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (window.scrollY > 50) {
-  //       setShow(true);
-  //     } else {
-  //       setShow(false);
-  //     }
-  //   });
-  //   return () => {
-  //     window.removeEventListener("scroll", () => {});
-  //   };
-  // }, []);
 
   return (
-    <nav className="w-screen h-[80px] fixed drop-shadow-lg relative">
+    <nav className="w-screen h-[80px] relative drop-shadow-lg z-2 bg-white">
       <div className="flex items-center justify-between w-full h-full px-10">
         <img className="mr-4 text-3xl" src={mainLogo} alt="haru-logo" />
       </div>
     </nav>
-    // <NavWrapper show={true} className="z-1">
-    //   <nav className="w-screen h-[80px] fixed drop-shadow-lg z-3 relative">
-    //     <div className="flex items-center justify-between w-full h-full px-10">
-    //       <img className="mr-4 text-3xl" src={mainLogo} alt="haru-logo" />
-    //     </div>
-    //   </nav>
-    // </NavWrapper>
   );
 };
 
 export default Navbar;
 
-const NavWrapper = styled.nav`
-  position: fixed;
-  /* background-color: ${(show) => (show ? "#090b13" : "transparent")}; */
-  background-color: ${(show) => (show ? "#CCCCCC" : "transparent")};
-`;
+// const NavWrapper = styled.nav`
+//   background-color: ${(show) => (show ? "#090b13" : "transparent")}; 
+//   /* background-color: ${(show) => (show ? "#CCCCCC" : "transparent")};  */
+// `;
