@@ -4,14 +4,24 @@ import page_cal from "/page_cal.jpg";
 import page_add from "/page_add.jpg";
 import page_friend from "/page_friend.jpg";
 import { motion } from "framer-motion";
+import useScrollClipPath from './../../hooks/useScrollClipPath';
 
 const AboutApp = () => {
+
+  const rightAnimated1 = useScrollClipPath('right', 1, 0);
+  const rightAnimated2 = useScrollClipPath('right', 1, 0);
+  const rightAnimated3 = useScrollClipPath('right', 1, 0);
+  const leftAnimated1 = useScrollClipPath('left', 1, 0);
+  const leftAnimated2 = useScrollClipPath('left', 1, 0);
+
   return (
     <div className="bg-white mb-25 text-center">
-      <div className="flex w-full bg-white my-10 scale-75">
+      <div className="flex w-full bg-white my-10 scale-75" >
         <motion.div
+          class="login_container"
           className="grid md:grid-cols-2 max-w-[1240px] m-auto"
           whileHover={{ scale: 1.2 }}
+          {...rightAnimated1}
         >
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
@@ -35,6 +45,7 @@ const AboutApp = () => {
         <motion.div
           className="grid md:grid-cols-2 max-w-[1240px] m-auto"
           whileHover={{ scale: 1.2 }}
+          {...leftAnimated1}
         >
           <div className="flex flex-col justify-center ml-10">
             <div className="flex flex-row flex-wrap mt-6 sm:mt-10">
@@ -58,6 +69,7 @@ const AboutApp = () => {
         <motion.div
           className="grid md:grid-cols-2 max-w-[1240px] m-auto"
           whileHover={{ scale: 1.2 }}
+          {...rightAnimated2}
         >
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
@@ -81,6 +93,7 @@ const AboutApp = () => {
         <motion.div
           className="grid md:grid-cols-2 max-w-[1240px] m-auto"
           whileHover={{ scale: 1.2 }}
+          {...leftAnimated2}
         >
           <div className="flex flex-col justify-center ml-10">
             <div className="flex flex-row flex-wrap mt-6 sm:mt-10">
@@ -104,6 +117,7 @@ const AboutApp = () => {
         <motion.div
           className="grid md:grid-cols-2 max-w-[1240px] m-auto"
           whileHover={{ scale: 1.2 }}
+          {...rightAnimated3}
         >
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">

@@ -5,9 +5,14 @@ import dc from "/kdc.png";
 import dk from "/dukh.jpg";
 import calendar_bg from "../../../public/calendar_background.jpg";
 import PositionCard from "./PositionCard";
-import { motion } from "framer-motion";
+import useScrollClipPath from './../../hooks/useScrollClipPath';
 
 const MadeBy = () => {
+
+  const animatedItem1 = useScrollClipPath('left', 1, 0);
+  const animatedItem2 = useScrollClipPath('left', 2, 0);
+  const animatedItem3 = useScrollClipPath('left', 3, 0);
+
   return (
     <div name="Made_Info" className="w-full my-24 ">
       <div className="w-full h-[700px] bg-slage-900/90 absolute">
@@ -15,10 +20,11 @@ const MadeBy = () => {
           className="brightness-50 object-cover w-full h-full"
           src={calendar_bg}
           alt="/"
+          {...animatedItem1}
         />
       </div>
-      <div className="max-w-[1240px] mx-auto text-black relative">
-        <div className="px-4 py-12">
+      <div className="max-w-[1240px] mx-auto text-black relative" {...animatedItem2}>
+        <div className="px-4 py-12" >
           <h3 className="pt-8 text-3xl text-center uppercase text-zinc-200 font-bold md:text-4xl">
             Person who made haru
           </h3>
@@ -29,7 +35,7 @@ const MadeBy = () => {
             <br />총 5명의 인원이 각자 역할을 맡아 열심히 만들었습니다.
           </h2>
         </div>
-        <div className="grid grid-cols-1 px-4 pt-12 text-black lg:grid-cols-5 gap-x-8 gap-y-16 sm:pt-20">
+        <div className="grid grid-cols-1 px-4 pt-12 text-black lg:grid-cols-5 gap-x-8 gap-y-16 sm:pt-20" {...animatedItem3}>
           <PositionCard
             userPosition={"👨🏻‍💼 PM"}
             userName={"권대철"}
