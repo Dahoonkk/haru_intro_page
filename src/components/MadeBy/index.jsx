@@ -5,37 +5,44 @@ import dc from "/kdc.png";
 import dk from "/dukh.jpg";
 import calendar_bg from "../../../public/calendar_background.jpg";
 import PositionCard from "./PositionCard";
-import useScrollClipPath from './../../hooks/useScrollClipPath';
+import useScrollClipPath from "./../../hooks/useScrollClipPath";
+import { motion } from "framer-motion";
 
 const MadeBy = () => {
-
-  const animatedItem1 = useScrollClipPath('left', 1, 0);
-  const animatedItem2 = useScrollClipPath('left', 2, 0);
-  const animatedItem3 = useScrollClipPath('left', 3, 0);
+  const animatedItem1 = useScrollClipPath("left", 1, 0);
+  const animatedItem2 = useScrollClipPath("left", 2, 0);
+  const animatedItem3 = useScrollClipPath("left", 2, 0);
 
   return (
     <div name="Made_Info" className="w-full my-24 ">
-      <div className="w-full h-[700px] bg-slage-900/90 absolute">
+      <div
+        className="w-full h-[700px] bg-slage-900/90 absolute"
+        {...animatedItem1}
+      >
         <img
           className="brightness-50 object-cover w-full h-full"
           src={calendar_bg}
           alt="/"
-          {...animatedItem1}
         />
       </div>
-      <div className="max-w-[1240px] mx-auto text-black relative" {...animatedItem2}>
-        <div className="px-4 py-12" >
+      <div className="max-w-[1240px] mx-auto text-black relative">
+        <div className="px-4 py-12" {...animatedItem2}>
           <h3 className="pt-8 text-3xl text-center uppercase text-zinc-200 font-bold md:text-4xl">
             Person who made haru
           </h3>
         </div>
-        <div className="px-4 py-10">
+        <div className="px-4 py-10" {...animatedItem3}>
           <h2 className="pt-4 text-2xl text-center text-zinc-200 font-bold md:text-3xl">
             HARU를 만든 사람들입니다.
             <br />총 5명의 인원이 각자 역할을 맡아 열심히 만들었습니다.
           </h2>
         </div>
-        <div className="grid grid-cols-1 px-4 pt-12 text-black lg:grid-cols-5 gap-x-8 gap-y-16 sm:pt-20" {...animatedItem3}>
+        <motion.div
+          className="grid grid-cols-1 px-4 pt-12 text-black lg:grid-cols-5 gap-x-8 gap-y-16 sm:pt-20"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <PositionCard
             userPosition={"👨🏻‍💼 PM"}
             userName={"권대철"}
@@ -66,7 +73,7 @@ const MadeBy = () => {
             userName={"양병헌"}
             userUrl={"https://github.com/YangBH-0"}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
