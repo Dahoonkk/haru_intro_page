@@ -4,7 +4,7 @@ import bg from "/haru_bg.png";
 const Home = () => {
   return (
     <motion.div
-      className="w-full mb-24 relative z-1"
+      className="w-full mb-24 relative z-1 overflow-x-hidden"
       // initial={{ opacity: 0, scale: 0.5 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{
@@ -14,7 +14,7 @@ const Home = () => {
       // }}
     >
       <motion.div className="w-full ">
-        <img src={bg} className="object-cove h-300" />
+        <img src={bg} className="w-full object-cove h-300" />
       </motion.div>
       {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <h3 className="text-3xl text-white mb-5 md:text-4xl">

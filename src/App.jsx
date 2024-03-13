@@ -11,11 +11,11 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
-        console.log("true scroll")
+        console.log("true scroll");
         setShow(true);
       } else {
         setShow(false);
-        console.log("false scroll")
+        console.log("false scroll");
       }
     });
     return () => {
@@ -24,13 +24,13 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar show={show} />
       <Home />
-      <AboutApp/>
+      <AboutApp />
       <MadeBy />
       <Footer />
-    </>
+    </div>
   );
 }
 

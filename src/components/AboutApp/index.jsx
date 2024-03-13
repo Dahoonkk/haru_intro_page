@@ -4,19 +4,18 @@ import page_cal from "/page_cal.jpg";
 import page_add from "/page_add.jpg";
 import page_friend from "/page_friend.jpg";
 import { motion } from "framer-motion";
-import useScrollClipPath from './../../hooks/useScrollClipPath';
+import useScrollClipPath from "./../../hooks/useScrollClipPath";
 
 const AboutApp = () => {
-
-  const rightAnimated1 = useScrollClipPath('right', 1, 0);
-  const rightAnimated2 = useScrollClipPath('right', 1, 0);
-  const rightAnimated3 = useScrollClipPath('right', 1, 0);
-  const leftAnimated1 = useScrollClipPath('left', 1, 0);
-  const leftAnimated2 = useScrollClipPath('left', 1, 0);
+  const rightAnimated1 = useScrollClipPath("right", 1, 0);
+  const rightAnimated2 = useScrollClipPath("right", 1, 0);
+  const rightAnimated3 = useScrollClipPath("right", 1, 0);
+  const leftAnimated1 = useScrollClipPath("left", 1, 0);
+  const leftAnimated2 = useScrollClipPath("left", 1, 0);
 
   return (
     <div className="bg-white mb-25 text-center">
-      <div className="flex w-full bg-white my-10 scale-75" >
+      <div className="flex w-full bg-white my-10 scale-75">
         <motion.div
           class="login_container"
           className="grid md:grid-cols-2 max-w-[1240px] m-auto"
@@ -25,7 +24,7 @@ const AboutApp = () => {
         >
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
-              간편한 로그인
+              ✅ 간편한 로그인
             </h1>
             <h3 className="mt-5 text-2xl md:text-3xl ">
               카카오톡 로그인을 통해 간편하게
@@ -54,10 +53,10 @@ const AboutApp = () => {
           </div>
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
-              사용자의 To Do
+              📑 사용자의 To Do
             </h1>
             <h3 className="mt-5 text-2xl md:text-3xl ">
-              사용자별 To Do를 관리할 수 있으며
+              사용자별 To Do를 관리할 수 있습니다.
               <br />
               달성률도 확인해보세요.
             </h3>
@@ -73,12 +72,14 @@ const AboutApp = () => {
         >
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
-              날짜별 일정 확인
+              📆 날짜별 일정 확인
             </h1>
             <h3 className="mt-5 text-2xl md:text-3xl ">
               날짜별로 등록한 일정을 확인해보세요.
               <br />
-              보기 쉽게 확인 가능합니다.
+              날짜별로 등록한 To Do와 Timeline을
+              <br />
+              확인할 수 있습니다.
             </h3>
           </div>
           <div className="flex flex-col justify-center ml-10">
@@ -102,7 +103,7 @@ const AboutApp = () => {
           </div>
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
-              개인 & 공동 일정 등록
+              👫🏻 개인 & 공동 일정 등록
             </h1>
             <h3 className="mt-5 text-2xl md:text-3xl ">
               개인 일정을 등록해보세요.
@@ -121,7 +122,7 @@ const AboutApp = () => {
         >
           <div className="flex flex-col justify-center w-full px-2 py-8 md:item-start">
             <h1 className="py-3 text-3xl font-bold md:text-5xl">
-              친구들 Following
+              🤝🏻 친구들 Following
             </h1>
             <h3 className="mt-5 text-2xl md:text-3xl ">
               친구들과 함께 팔로워를 늘려보세요.
