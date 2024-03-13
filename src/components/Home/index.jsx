@@ -1,4 +1,3 @@
-import plan_bg from "/plan_bg.jpg";
 import { motion } from "framer-motion";
 import bg from "/haru_bg.png";
 
